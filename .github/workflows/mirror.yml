@@ -1,0 +1,28 @@
+name: LPMS mirror
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch LPMS feeds
+        run: python3 fetch_lpms.py --out data_out
+      - name: Publish data branch (orphan, force-pushed - history stays one commit)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd data_out
+          git init -b data .
+          git config user.email 'lpms-mirror@users.noreply.github.com'
+          git config user.name 'lpms-mirror'
+          git add -A
+          git commit -m "LPMS snapshot $(date -u +%FT%TZ)"
+          git push --force "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" data
