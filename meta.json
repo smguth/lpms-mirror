@@ -1,0 +1,115 @@
+{
+ "fetchedAt": 1793462015,
+ "source": "https://ndc.ops.usace.army.mil/ords/lpms",
+ "ok": 27,
+ "feeds": {
+  "delay.txt": {
+   "ok": true,
+   "bytes": 25458
+  },
+  "stoppage.json": {
+   "ok": true,
+   "bytes": 4802
+  },
+  "queue_CH01.json": {
+   "ok": true,
+   "bytes": 2
+  },
+  "queue_IL02.json": {
+   "ok": true,
+   "bytes": 2
+  },
+  "queue_IL03.json": {
+   "ok": true,
+   "bytes": 72414
+  },
+  "queue_IL04.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_IL05.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_IL06.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_IL07.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_IL08.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_MI26.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_MI27.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_OH79.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TN01.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TN02.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT50.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT49.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT48.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT47.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT46.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT45.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT44.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT43.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT42.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_TT41.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_BW02.json": {
+   "ok": true,
+   "bytes": 73
+  },
+  "queue_BW01.json": {
+   "ok": true,
+   "bytes": 73
+  }
+ }
+}
